@@ -22,7 +22,7 @@ $books = array(
     )
 );
 foreach ($books as $title => $book) {
-	if((isset($book['published']) && $book['published'] > 1950)){
+	if($book['published'] > 1950){
 		echo "Title: {$title}\n";
 	    foreach ($book as $key => $value) {
 	    	$key = ucfirst($key);
