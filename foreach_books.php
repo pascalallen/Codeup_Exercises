@@ -21,3 +21,13 @@ $books = array(
         'pages' => 544
     )
 );
+foreach ($books as $title => $book) {
+	if((isset($book['published']) && $book['published'] > 1950)){
+		echo "Title: {$title}\n";
+	    foreach ($book as $key => $value) {
+	    	$key = ucfirst($key);
+	        echo "$key: $value\n";
+	    }
+	    echo PHP_EOL;
+	}
+}
