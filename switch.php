@@ -29,21 +29,21 @@ switch($dayOfWeek) {
 		break;
 	default:
 		break;
-}
+};
 
-if($daysOfWeek == 1){
+if($dayOfWeek == 1){
 	echo "Monday\n";
-}else if($daysOfWeek == 2){
+}else if($dayOfWeek == 2){
 	echo "Tuesday\n";
-}else if($daysOfWeek == 3){
+}else if($dayOfWeek == 3){
 	echo "Wednesday\n";
-}else if($daysOfWeek == 4){
+}else if($dayOfWeek == 4){
 	echo "Thursday\n";
-}else if($daysOfWeek == 5){
+}else if($dayOfWeek == 5){
 	echo "Friday\n";
-}else if($daysOfWeek == 6){
+}else if($dayOfWeek == 6){
 	echo "Saturday\n";
-}else if($daysOfWeek == 7){
+}else if($dayOfWeek == 7){
 	echo "Sunday\n";
 }
 
