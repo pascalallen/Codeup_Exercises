@@ -4,10 +4,27 @@ $names = ['Tina', 'Dana', 'Mike', 'Amy', 'Adam'];
 
 $compare = ['Tina', 'Dean', 'Mel', 'Amy', 'Michael'];
 
-function arrayHasValue($name){
-	if($count($name) != 0){
-		return true;
+function getName($person, $names){
+	$result = array_search($person, $names);
+	if($result === false){
+		return 'FALSE';
 	}else{
-		return false;
+		return 'TRUE';
 	}
 }
+
+echo getName('Tina', $names) . PHP_EOL;
+echo getName('Bob', $names) . PHP_EOL;
+
+function compareArray($compare, $names){
+	$commonItems = 0;
+	foreach ($names as $key => $value) {
+		$check = array_search($value, $compare);
+		if($check !== false){
+			$commonItems++;
+		}
+	}
+	return "These arrays have {$commonItems} things in common" . PHP_EOL;
+}
+
+echo compareArray($compare, $names) . PHP_EOL;
