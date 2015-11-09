@@ -30,5 +30,17 @@ function compareArray($compare, $names){
 echo compareArray($compare, $names) . PHP_EOL;
 
 function combine_arrays($value1, $value2){
-	
+	$newArray = array();
+	for($i = 0; $i < count($value1); $i++){
+		if($value1[$i] !== $value2[$i]){
+			array_push($newArray, $value1[$i], $value2[$i]);
+		}else{
+			array_push($newArray, $value1[$i]);
+		}
+	}
+	return $newArray;
 }
+
+print_r(combine_arrays($names, $compare));
+
+
