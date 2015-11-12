@@ -1,11 +1,3 @@
-// Output should include:
-// - total number of employees
-// - total number of units sold
-// - avg units sold per employee
-// - Then output should share employee production, ordered from highest to lowest # of units
-// * Units   |     Full Name       |   Employee Number
-// * 5             Bob Boberson        2
-
 Monthly Sales Report
 Date: 03-17-2015
 Office: Codeup
