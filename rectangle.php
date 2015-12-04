@@ -15,6 +15,7 @@ class Rectangle
     {
         return $this->height * $this->width;
     }
+
 }
 
 // class Superhero extends Person
