@@ -1,3 +1,5 @@
+<?php
+
 class Rectangle
 {
     public $height;
@@ -15,18 +17,18 @@ class Rectangle
     }
 }
 
-class Superhero extends Person
-{
-    public $pseudonym;
-    public $capeColor;
+// class Superhero extends Person
+// {
+//     public $pseudonym;
+//     public $capeColor;
 
-    public function alterEgo()
-    {
-        return 'Top Secret Alternate Ego: ' . $this->fullName();
-    }
+//     public function alterEgo()
+//     {
+//         return 'Top Secret Alternate Ego: ' . $this->fullName();
+//     }
 
-    public function hasCape()
-    {
-        return !empty($this->capeColor);
-    }
-}
+//     public function hasCape()
+//     {
+//         return !empty($this->capeColor);
+//     }
+// }
