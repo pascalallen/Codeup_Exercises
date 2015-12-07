@@ -2,8 +2,8 @@
 
 class Rectangle
 {
-    public $height;
-    public $width;
+    private $height;
+    private $width;
 
     public function __construct($height, $width)
     {
@@ -11,25 +11,29 @@ class Rectangle
         $this->width  = $width;
     }
 
-    public function area()
+    private function setHeight($height)
+    {
+        $this->height = trim($height);
+    }
+
+    private function setWidth($width)
+    {
+        $this->width = trim($width);
+    }
+
+    public function getArea()
     {
         return $this->height * $this->width;
     }
 
+    protected function getHeight()
+    {
+        return $this->height;
+    }
+
+    protected function getWidth()
+    {
+        return $this->width;
+    }
+
 }
-
-// class Superhero extends Person
-// {
-//     public $pseudonym;
-//     public $capeColor;
-
-//     public function alterEgo()
-//     {
-//         return 'Top Secret Alternate Ego: ' . $this->fullName();
-//     }
-
-//     public function hasCape()
-//     {
-//         return !empty($this->capeColor);
-//     }
-// }
